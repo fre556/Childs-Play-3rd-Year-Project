@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.flash.project.lettersActivity"
+    tools:showIn="@layout/activity_letters"
+    android:background="#556ff3">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a1"
+        android:layout_below="@+id/textQuestionVariable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/textQuestionVariable"
+        android:layout_toStartOf="@+id/textQuestionVariable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Press the letter:"
+        android:id="@+id/textQuestion"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#1bf51f"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a2"
+        android:layout_alignTop="@+id/a1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textQuestionVariable" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a3"
+        android:layout_below="@+id/a1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:layout_toStartOf="@+id/a4"
+        android:layout_alignRight="@+id/a1"
+        android:layout_alignEnd="@+id/a1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a4"
+        android:layout_alignLeft="@+id/a2"
+        android:layout_alignStart="@+id/a2"
+        android:layout_alignRight="@+id/a2"
+        android:layout_alignEnd="@+id/a2"
+        android:layout_alignBottom="@+id/a3"
+        android:layout_alignTop="@+id/a3" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:textSize="25dp"
+        android:layout_below="@+id/textLevel"
+        android:layout_alignLeft="@+id/textLevel"
+        android:layout_alignStart="@+id/textLevel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Level: "
+        android:id="@+id/textLevel"
+        android:textSize="30dp"
+        android:textColor="#dcf215"
+        android:layout_below="@+id/textScore"
+        android:layout_alignRight="@+id/textScore"
+        android:layout_alignEnd="@+id/textScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score: "
+        android:id="@+id/textScore"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/a3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:textColor="#dcf215" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" "
+        android:id="@+id/textQuestionVariable"
+        android:layout_below="@+id/textQuestion"
+        android:layout_centerHorizontal="true"
+        android:textColor="#50f31f"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtScoreVariable"
+        android:layout_above="@+id/textLevel"
+        android:layout_toRightOf="@+id/textScore"
+        android:layout_toEndOf="@+id/textScore"
+        android:textSize="30dp"
+        android:textColor="#dcf215" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/txtLevelVariable"
+        android:textSize="30dp"
+        android:textColor="#dcf215"
+        android:layout_toLeftOf="@+id/txtLevelMax"
+        android:layout_alignTop="@+id/textLevel"
+        android:layout_toRightOf="@+id/textScore"
+        android:layout_toEndOf="@+id/textScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="/8"
+        android:id="@+id/txtScoreMax"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/txtScoreVariable"
+        android:layout_toRightOf="@+id/txtScoreVariable"
+        android:layout_toEndOf="@+id/txtScoreVariable"
+        android:textColor="#dcf215" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="/8"
+        android:id="@+id/txtLevelMax"
+        android:textSize="30dp"
+        android:textColor="#dcf215"
+        android:layout_below="@+id/txtScoreMax"
+        android:layout_toRightOf="@+id/txtScoreVariable"
+        android:layout_toEndOf="@+id/txtScoreVariable" />
+
+</RelativeLayout>

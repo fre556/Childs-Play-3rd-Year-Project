@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.flash.project.main_Activity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:background="#52c7d1"
+        android:singleLine="true" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="left|center_vertical">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="@string/optionsButton"
+            android:id="@+id/btnRecord"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#ee962a"
+            android:textSize="36dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="@string/exitButton"
+            android:id="@+id/btnExitButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:textSize="36dp"
+            android:background="#ead340" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/titleText"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="40dp"
+            android:textColor="#040006"
+            android:layout_marginRight="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/titleText2"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="40dp"
+            android:textColor="#0a0808"
+            android:layout_marginLeft="120dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="@string/playButton"
+            android:id="@+id/btnPlayButton"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#66d30d"
+            android:textSize="36dp"
+            android:layout_marginTop="50dp" />
+    </FrameLayout>
+
+</FrameLayout>

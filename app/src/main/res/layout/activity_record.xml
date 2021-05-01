@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010507"
+    tools:context="com.example.flash.project.recordActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Repeat the following Question"
+        android:id="@+id/txtConstantText"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="27dp"
+        android:textColor="#f8f2f2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/txtVariableText"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:textSize="32dp"
+        android:textColor="#f9f0f0" />
+
+    <Button
+        android:layout_width="291dp"
+        android:layout_height="99dp"
+        android:text="Record"
+        android:id="@+id/btnRecord"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="-30dp" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="69dp"
+        android:text="Play"
+        android:id="@+id/btnPlay"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="100dp"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="174dp"
+        android:layout_height="69dp"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_gravity="right|bottom"
+        android:textSize="32dp"
+        android:layout_marginBottom="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:text="Main Menu"
+        android:id="@+id/btnMain"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp" />
+</FrameLayout>

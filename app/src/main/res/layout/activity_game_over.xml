@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.flash.project.gameOverActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#b71d1d">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gameOverText1"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:textColor="#3058d1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gameOverText2"
+            android:id="@+id/textView10"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:textSize="26sp"
+            android:textColor="#4d69e9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gameOverText3"
+            android:id="@+id/textView11"
+            android:layout_gravity="center"
+            android:textColor="#284de1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="51dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/finalScore"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#77ec10"
+            android:textSize="35sp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="51dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView12"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/scoreOf"
+            android:textColor="#37ef2a"
+            android:textSize="35sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainmenuButton"
+            android:id="@+id/MainMenu"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="30sp"
+            android:layout_marginBottom="30dp" />
+    </FrameLayout>
+
+</FrameLayout>

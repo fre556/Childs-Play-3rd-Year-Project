@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.flash.project.chooseGameActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#aedc15">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="100dp"
+            android:text="@string/numGameButton"
+            android:id="@+id/numButton"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:background="#ec6f6f"
+            android:textSize="24sp"
+            android:textColor="#f0d421" />
+
+        <Button
+            android:layout_width="159dp"
+            android:layout_height="100dp"
+            android:text="@string/letGameButton"
+            android:id="@+id/letButton"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:background="#f4a43f"
+            android:textSize="24sp"
+            android:textColor="#85378f" />
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="100dp"
+            android:text="Sums"
+            android:id="@+id/shpButton"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="#86b3f2"
+            android:textSize="24sp"
+            android:textColor="#f48028" />
+
+        <Button
+            android:layout_width="159dp"
+            android:layout_height="100dp"
+            android:text="@string/colGameButton"
+            android:id="@+id/colButton"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="#d66ff8"
+            android:textSize="24sp"
+            android:textColor="#f5f910" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="220dp"
+            android:layout_height="98dp"
+            android:text="@string/backGameButton"
+            android:id="@+id/bkButton"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/chooseTitle"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColorHint="#e82020"
+            android:textColor="#2686c7" />
+
+    </FrameLayout>
+
+</FrameLayout>

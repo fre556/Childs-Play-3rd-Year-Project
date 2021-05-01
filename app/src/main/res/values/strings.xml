@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Project</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="playButton">Play</string>
+    <string name="optionsButton">Options</string>
+    <string name="exitButton">Exit</string>
+    <string name="titleText">Welcome to</string>
+    <string name="titleText2">Sound Play</string>
+    <string name="chooseTitle">Please Choose Game Type</string>
+    <string name="backGameButton">Back</string>
+    <string name="title_activity_choose_game">chooseGameActivity</string>
+    <string name="numGameButton">Numbers</string>
+    <string name="letGameButton">Letters</string>
+    <string name="shapeGameButton">Shapes</string>
+    <string name="colGameButton">Colours</string>
+    <string name="numGameInst">Pick The Correct Number:</string>
+    <string name="title_activity_num">NumActivity</string>
+    <string name="scoreText">Score: </string>
+    <string name="levelText">Level: </string>
+    <string name="scoreOf"> /8</string>
+    <string name="mainmenuButton"> Main Menu</string>
+    <string name="gameOverText1">Congratulations</string>
+    <string name="gameOverText2">You have completed the Game!</string>
+    <string name="gameOverText3">Your Score Was: </string>
+    <string name="title_activity_game_over">gameOverActivity</string>
+    <string name="title_activity_letters">lettersActivity</string>
+
+    <string name="title_activity_colours">coloursActivity</string>
+
+    <string name="title_activity_shapes">shapesActivity</string>
+
+    <string name="title_activity_record">recordActivity</string>
+</resources>

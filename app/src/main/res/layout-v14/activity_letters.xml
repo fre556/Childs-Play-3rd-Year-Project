@@ -1,0 +1,173 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32c0f5"
+    tools:context="com.example.flash.project.coloursActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/mainmenuButton"
+        android:textColor="#fb1111"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/a4"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#f80909"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pick the correct Letter:"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp"
+        android:textColor="#f90d0d"
+        android:id="@+id/txtQuestion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scoreText"
+        android:id="@+id/txtScore"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="90dp"
+        android:textColor="#0810f9"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scoreOf"
+        android:id="@+id/txtScoreMax"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="110dp"
+        android:textSize="35sp"
+        android:textColor="#0b30e9" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/levelText"
+        android:id="@+id/txtLevel"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="70dp"
+        android:textColor="#0810f9"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/txtLevelVariable"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="70dp"
+        android:textSize="35sp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scoreOf"
+        android:id="@+id/TxtLevelMax"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="70dp"
+        android:textSize="35dp"
+        android:textColor="#0b30e9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtScoreVariable"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="110dp"
+        android:textSize="35sp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/textQuestionVariable"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#151fa8"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#ef0707"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-50dp"
+        android:textColor="#f90e0e"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-50dp"
+        android:textColor="#f40d0d"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/HighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="35dp"
+        android:text="High Score:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/highScoreVar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="5dp"
+        android:text="0"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+</FrameLayout>
